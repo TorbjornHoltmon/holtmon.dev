@@ -1,0 +1,49 @@
+{
+	"name": "holtmon.dev",
+	"version": "1.0.0",
+	"description": "My first-rate Nuxt.js project",
+	"author": "Torbjørn Holtmon",
+	"private": true,
+	"scripts": {
+		"dev": "nuxt-ts",
+		"build": "nuxt-ts build",
+		"generate": "nuxt-ts generate",
+		"start": "nuxt-ts start",
+		"lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+		"test": "jest"
+	},
+	"lint-staged": {
+		"*.{js,vue}": "npm run lint"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"dependencies": {
+		"@nuxt/content": "^1.3.2",
+		"@nuxt/typescript-runtime": "^0.4.10",
+		"@nuxtjs/axios": "^5.11.0",
+		"@nuxtjs/dotenv": "^1.4.1",
+		"nuxt": "^2.12.2"
+	},
+	"devDependencies": {
+		"@nuxt/typescript-build": "^1.0.3",
+		"@nuxtjs/tailwindcss": "^2.0.0",
+		"@nuxtjs/eslint-config-typescript": "^2.0.0",
+		"@nuxtjs/eslint-module": "^2.0.0",
+		"babel-eslint": "^10.1.0",
+		"eslint": "^7.2.0",
+		"eslint-plugin-nuxt": ">=1.0.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-prettier": "^3.1.3",
+		"prettier": "^2.0.5",
+		"husky": "^4.2.5",
+		"lint-staged": "^10.2.10",
+		"@vue/test-utils": "^1.0.3",
+		"babel-jest": "^26.0.1",
+		"jest": "^26.0.1",
+		"vue-jest": "^3.0.5",
+		"ts-jest": "^26.1.0"
+	}
+}
