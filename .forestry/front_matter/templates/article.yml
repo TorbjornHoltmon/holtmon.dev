@@ -35,4 +35,4 @@ fields:
     maxSize: 64
   label: Poster
 pages:
-- content/articles/Test-Article.md
+- content/articles/test-article.md
