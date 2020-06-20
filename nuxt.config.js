@@ -1,6 +1,7 @@
 export default {
 	// mode: "universal",
-	mode: "spa",
+	mode: process.env.BUILD_MODE,
+	target: "static",
 	/*
 	 ** Headers of the page
 	 */
@@ -17,6 +18,17 @@ export default {
 		],
 		link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
 	},
+	/*
+	 ** Content options
+	 */
+	content: {
+		markdown: {
+			prism: {
+				theme: "@/assets/css/content/code.css",
+			},
+		},
+	},
+	components: true,
 	/*
 	 ** Customize the progress-bar color
 	 */
@@ -53,6 +65,23 @@ export default {
 	 ** See https://axios.nuxtjs.org/options
 	 */
 	axios: {},
+	/*
+	 ** Generate Config
+	 */
+	generate: {
+		fallback: true,
+		async routes() {
+			const { $content } = require("@nuxt/content");
+			const routes = [];
+			// Index
+			routes.push.apply(routes, await $content().only(["path"]).only(["path"]).fetch());
+
+			// Articles
+			routes.push.apply(routes, await $content("articles").only(["path"]).fetch());
+
+			return routes.map((file) => (file.path === "/index" ? "/" : file.path));
+		},
+	},
 	/*
 	 ** Build configuration
 	 */

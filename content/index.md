@@ -1,6 +1,6 @@
 ---
-
 ---
+
 #### Dette er en test
 
 Test  
@@ -10,10 +10,218 @@ TEEEEST
 
 Dette er test nummer 1. _Live preview!_
 
-```html
-<template>
-	<div class="container">
-		<nuxt />
-	</div>
-</template>
+```javascript
+const test = 23;
+test = test + 30;
+
+const hello = () => {
+	helloWorld();
+};
+```
+
+```javascript
+const test = 23;
+test = test + 30;
+
+const hello = () => {
+	helloWorld();
+};
+```
+
+```javascript
+const test = 23;
+test = test + 30;
+
+const hello = () => {
+	helloWorld();
+};
+```
+
+```javascript
+const test = 23;
+test = test + 30;
+
+const hello = () => {
+	helloWorld();
+};
+```
+
+```javascript
+const test = 23;
+test = test + 30;
+
+const hello = () => {
+	helloWorld();
+};
+```
+
+```javascript
+const test = 23;
+test = test + 30;
+
+const hello = () => {
+	helloWorld();
+};
+```
+
+```javascript
+const test = 23;
+test = test + 30;
+
+const hello = () => {
+	helloWorld();
+};
+```
+
+```javascript
+const test = 23;
+test = test + 30;
+
+const hello = () => {
+	helloWorld();
+};
+```
+
+```javascript
+const test = 23;
+test = test + 30;
+
+const hello = () => {
+	helloWorld();
+};
+```
+
+```javascript
+const test = 23;
+test = test + 30;
+
+const hello = () => {
+	helloWorld();
+};
+```
+
+```javascript
+const test = 23;
+test = test + 30;
+
+const hello = () => {
+	helloWorld();
+};
+```
+
+```javascript
+const test = 23;
+test = test + 30;
+
+const hello = () => {
+	helloWorld();
+};
+```
+
+```javascript
+const test = 23;
+test = test + 30;
+
+const hello = () => {
+	helloWorld();
+};
+```
+
+```javascript
+const test = 23;
+test = test + 30;
+
+const hello = () => {
+	helloWorld();
+};
+```
+
+```javascript
+const test = 23;
+test = test + 30;
+
+const hello = () => {
+	helloWorld();
+};
+```
+
+```javascript
+const test = 23;
+test = test + 30;
+
+const hello = () => {
+	helloWorld();
+};
+```
+
+```javascript
+const test = 23;
+test = test + 30;
+
+const hello = () => {
+	helloWorld();
+};
+```
+
+```javascript
+const test = 23;
+test = test + 30;
+
+const hello = () => {
+	helloWorld();
+};
+```
+
+```javascript
+const test = 23;
+test = test + 30;
+
+const hello = () => {
+	helloWorld();
+};
+```
+
+```javascript
+const test = 23;
+test = test + 30;
+
+const hello = () => {
+	helloWorld();
+};
+```
+
+```javascript
+const test = 23;
+test = test + 30;
+
+const hello = () => {
+	helloWorld();
+};
+```
+
+```javascript
+const test = 23;
+test = test + 30;
+
+const hello = () => {
+	helloWorld();
+};
+```
+
+```javascript
+const test = 23;
+test = test + 30;
+
+const hello = () => {
+	helloWorld();
+};
+```
+
+```javascript
+const test = 23;
+test = test + 30;
+
+const hello = () => {
+	helloWorld();
+};
 ```

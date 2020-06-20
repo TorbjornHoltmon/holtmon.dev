@@ -1,21 +1,23 @@
-<template>
-	<div class="container">
-		<nuxt-content :document="index" />
-	</div>
-</template>
-
 <script lang="ts">
 	import Vue from "vue";
 
 	export default Vue.extend({
 		async asyncData({ $content }) {
 			const index = await $content("index").fetch();
+
 			return {
 				index,
 			};
 		},
+		mounted() {},
 	});
 </script>
+
+<template>
+	<div class="container">
+		<nuxt-content :document="index" />
+	</div>
+</template>
 
 <style>
 	/* Sample `apply` at-rules with Tailwind CSS
