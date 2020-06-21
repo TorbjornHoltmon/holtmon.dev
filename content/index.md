@@ -4,7 +4,7 @@
 #### Dette er en test
 
 Test  
-**Dette er en test**
+**Dette er en test Det skal oppdateres**
 
 TEEEEST testy test
 
