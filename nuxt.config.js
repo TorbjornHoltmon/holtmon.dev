@@ -1,7 +1,7 @@
 export default {
 	// mode: "universal",
-	mode: process.env.BUILD_MODE,
-	target: "static",
+	mode: process.env.BUILD_MODE === "production" ? "universal" : "spa",
+	target: process.env.BUILD_MODE === "production" ? "static" : "",
 	/*
 	 ** Headers of the page
 	 */
@@ -43,17 +43,6 @@ export default {
 	components: true,
 	/*
 	 ** Content options
-	 */
-	content: {
-		markdown: {
-			prism: {
-				theme: "@/assets/css/content/code.css",
-			},
-		},
-	},
-	components: true,
-	/*
-	 ** Customize the progress-bar color
 	 */
 	loading: { color: "#fff" },
 	/*
