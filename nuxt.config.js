@@ -1,7 +1,7 @@
 export default {
 	// mode: "universal",
-	mode: process.env.BUILD_MODE === "production" ? "universal" : "spa",
-	target: process.env.BUILD_MODE === "production" ? "static" : "",
+	mode: process.env.BUILD_MODE,
+	target: process.env.static ? "static" : "",
 	/*
 	 ** Headers of the page
 	 */
