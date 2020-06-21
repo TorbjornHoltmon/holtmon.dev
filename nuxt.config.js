@@ -1,7 +1,7 @@
 export default {
 	// mode: "universal",
 	mode: process.env.BUILD_MODE,
-	target: process.env.static ? "static" : "",
+	target: process.env.STATIC === "true" ? "static" : "",
 	/*
 	 ** Headers of the page
 	 */
