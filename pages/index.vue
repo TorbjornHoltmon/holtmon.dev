@@ -14,7 +14,7 @@
 </script>
 
 <template>
-	<div class="container">
+	<div class="container pl-4 pr-4 md:p-0">
 		<nuxt-content :document="index" />
 	</div>
 </template>
@@ -25,12 +25,4 @@
   @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
-	.container {
-		margin: 0 auto;
-		min-height: 100vh;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-	}
 </style>

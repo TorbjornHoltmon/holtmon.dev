@@ -2,12 +2,16 @@
 	border-radius: 0.5rem;
 }
 
+.nuxt-content-highlight code {
+	font-family: jetbrains-mono !important;
+}
+
 code[class*="language-"],
 pre[class*="language-"] {
 	color: #ccc;
 	background: none;
-	font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-	font-size: 1em;
+	font-family: jetbrains-mono !important;
+	font-size: 13px;
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;

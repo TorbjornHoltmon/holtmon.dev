@@ -4,24 +4,34 @@
 </script>
 
 <template>
-	<div class="flex">
-		<div class="lg:w-1/6 bg-themeBackground flex flex-col">
-			<img class="rounded-full border-themeAccent border-2 mx-auto" src="/images/img_0123-2.jpeg" />
-
+	<div class="flex h-screen">
+		<div class="lg:flex w-64 hidden flex-col">
+			<div class="pt-8 pb-2 px-8">
+				<img class="object-cover rounded-full w-full" src="/images/img_0123-02.jpeg" />
+			</div>
 			<div class="text-center">
-				<h2 class="text-lg">Erin Lindford</h2>
+				<h2 class="text-lg">Torbjørn Holtmon</h2>
 
-				<div class="text-purple-500">Customer Support</div>
-
-				<div class="text-gray-600">erinlindford@example.com</div>
-
-				<div class="text-gray-600">(555) 765-4321</div>
+				<div>Developer - Making Waves</div>
+			</div>
+			<div class="text-center">
+				<h1>Blog</h1>
+				<h1>Projects</h1>
 			</div>
 		</div>
-		<div class="lg:w-5/6 lg:relative bg-themeDunno text-themeText">
-			<nuxt />
+		<div class="flex-1 flex overflow-hidden">
+			<!-- Scrollable container -->
+			<div class="w-full flex-1 overflow-y-scroll">
+				<div class="flex test mx-auto pt-8">
+					<nuxt />
+				</div>
+			</div>
 		</div>
 	</div>
 </template>
 
-<style lang="postcss"></style>
+<style lang="postcss">
+	.test {
+		max-width: 680px;
+	}
+</style>
