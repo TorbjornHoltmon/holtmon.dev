@@ -102,7 +102,7 @@ export default {
 		 ** You can extend webpack config here
 		 */
 		extend(config, ctx) {
-			if (ctx.isDev && ctx.isClient) {
+			if (ctx.isDev && ctx.isClient && process.env.BUILD_MODE === "development") {
 				config.devtool = "#source-map";
 			}
 		},
