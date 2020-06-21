@@ -6,7 +6,7 @@
 Test  
 **Dette er en test Det skal oppdateres**
 
-TEEEEST testy test
+TEEEEST BEST
 
 Jeg tester enda mere
 
