@@ -10,7 +10,8 @@
 		"generate": "nuxt-ts generate",
 		"start": "nuxt-ts start",
 		"lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-		"test": "jest"
+		"test": "jest",
+		"forestry:preview": "npm run build && npm run start"
 	},
 	"lint-staged": {
 		"*.{js,vue}": "npm run lint"
