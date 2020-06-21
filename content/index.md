@@ -1,12 +1,14 @@
 ---
----
 
+---
 #### Dette er en test
 
 Test  
-**Dette er en test**
+**Dette er en test Det skal oppdateres**
 
-TEEEEST Live update?
+TEEEEST testy test
+
+Jeg tester enda mere
 
 Jeg bla bla bla bla bla bla bla bla bla Jeg bla bla bla bla bla bla bla bla bla Jeg bla bla bla bla bla
 bla bla bla bla Jeg bla bla bla bla bla bla bla bla bla
