@@ -42,6 +42,17 @@ export default {
 	},
 	components: true,
 	/*
+	 ** Content options
+	 */
+	content: {
+		markdown: {
+			prism: {
+				theme: "@/assets/css/content/code.css",
+			},
+		},
+	},
+	components: true,
+	/*
 	 ** Customize the progress-bar color
 	 */
 	loading: { color: "#fff" },
