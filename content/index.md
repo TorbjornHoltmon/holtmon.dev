@@ -10,7 +10,7 @@ kan hende dsdasadaen ikkeasdasd serafadas heltsinnet brakadabra ut, kan hende de
 
 **Dette er en test Det skal oppdateres**
 
-TEEEEST testy test
+TEEEEST BEST
 
 Jeg tester enda mere
 
