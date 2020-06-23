@@ -5,7 +5,15 @@
  ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
  */
 module.exports = {
-	theme: {},
+	theme: {
+		extend: {
+			colors: {
+				background: "#212121",
+				sidebar: "#323232",
+				accent: "#0d7377",
+			},
+		},
+	},
 	variants: {},
 	plugins: [],
 	purge: {
