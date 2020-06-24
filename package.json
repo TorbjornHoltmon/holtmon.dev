@@ -12,7 +12,8 @@
 		"lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
 		"test": "jest",
 		"forestry:preview": "npm run build && npm run start",
-		"build:deploy": "nuxt-ts build && nuxt-ts export"
+		"build:deploy": "nuxt-ts build && nuxt-ts export",
+		"static": "nuxt-ts export"
 	},
 	"lint-staged": {
 		"*.{js,vue}": "npm run lint"
