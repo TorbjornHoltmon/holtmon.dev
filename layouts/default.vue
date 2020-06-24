@@ -4,12 +4,12 @@
 </script>
 
 <template>
-	<div class="flex lg:flex-row flex-col h-screen">
-		<nav class="lg:hidden flex items-center bg-sidebar p-6">
+	<div class="flex lg:flex-row flex-col">
+		<nav class="lg:hidden flex bg-sidebar p-6">
 			<div class="w-32 text-center">
 				<img class="object-cover rounded-full w-full" src="/images/img_0123-02.jpeg" />
 			</div>
-			<div class="flex">
+			<div class="flex flex-1 items-center">
 				<h1 class="ml-8 mr-8 mb-0">Blog</h1>
 				<h1 class="mb-0">Projects</h1>
 			</div>
