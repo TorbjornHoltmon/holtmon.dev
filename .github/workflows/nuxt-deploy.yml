@@ -28,7 +28,7 @@ jobs:
           registry-url: https://npm.pkg.github.com
       - uses: actions/cache@v2
         with:
-          path: node_modules
+          path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
