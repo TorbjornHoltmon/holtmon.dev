@@ -4,7 +4,7 @@
 </script>
 
 <template>
-	<div class="flex lg:flex-row flex-col">
+	<div class="flex lg:flex-row flex-col lg:h-screen h-auto">
 		<nav class="lg:hidden flex bg-sidebar p-6">
 			<div class="w-32 text-center">
 				<img class="object-cover rounded-full w-full" src="/images/img_0123-02.jpeg" />
