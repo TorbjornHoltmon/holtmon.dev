@@ -9,13 +9,18 @@
 				index,
 			};
 		},
-		mounted() {},
+		mounted() {
+			setInterval(() => {
+				// eslint-disable-next-line no-console
+				console.log("!");
+			}, 10000);
+		},
 	});
 </script>
 
 <template>
 	<div class="container max-w-screen-sm md:max-w-screen-md mx-auto pl-4 pr-4 md:p-0">
-		<nuxt-content :document="index" />
+		<div></div>
 	</div>
 </template>
 
