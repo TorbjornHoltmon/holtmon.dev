@@ -74,23 +74,21 @@ export default {
 		"@nuxt/content",
 	],
 	// CSP
-	render: {
-		csp: {
-			hashAlgorithm: "sha256",
-			unsafeInlineCompatibility: true,
-			addMeta: false,
-			policies: {
-				"default-src": ["'self'"],
-				"img-src": ["https:", "'self'"],
-				"font-src": ["'self'"],
-				"media-src": ["'self'"],
-				"frame-src": ["'self'"],
-				"style-src": ["'self'"],
-				"script-src": ["'self'", "'unsafe-inline'"],
-				"connect-src": ["self"],
-				"form-action": ["'self'"],
-				"frame-ancestors": ["'none'"],
-			},
+	csp: {
+		hashAlgorithm: "sha256",
+		unsafeInlineCompatibility: true,
+		addMeta: false,
+		policies: {
+			"default-src": ["'self'"],
+			"img-src": ["https:", "'self'"],
+			"font-src": ["'self'"],
+			"media-src": ["'self'"],
+			"frame-src": ["'self'"],
+			"style-src": ["'self'"],
+			"script-src": ["'self'", "'unsafe-inline'"],
+			"connect-src": ["self"],
+			"form-action": ["'self'"],
+			"frame-ancestors": ["'none'"],
 		},
 	},
 	/*
