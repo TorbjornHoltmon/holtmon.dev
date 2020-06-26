@@ -14,7 +14,7 @@
 		"forestry:preview": "npm run build && npm run start",
 		"build:deploy": "nuxt-ts build && nuxt-ts export",
 		"static": "nuxt-ts export",
-		"serve": "nuxt-ts serve"
+		"serve": "nuxt-ts build && nuxt-ts export && nuxt-ts serve"
 	},
 	"lint-staged": {
 		"*.{js,vue}": "npm run lint"
