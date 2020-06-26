@@ -9,12 +9,6 @@
 				index,
 			};
 		},
-		mounted() {
-			setInterval(() => {
-				// eslint-disable-next-line no-console
-				console.log("!");
-			}, 10000);
-		},
 	});
 </script>
 
