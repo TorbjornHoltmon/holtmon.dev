@@ -7,7 +7,7 @@
 	<div class="flex lg:flex-row flex-col lg:h-screen h-auto">
 		<nav class="lg:hidden flex bg-sidebar p-6">
 			<div class="w-32 text-center">
-				<img class="object-cover rounded-full w-full" src="/images/img_0123-02.webp" />
+				<img class="object-cover rounded-full w-full" src="/images/torbjorn.jpeg" />
 			</div>
 			<div class="flex flex-1 items-center">
 				<h1 class="ml-8 mr-8 mb-0">Blog</h1>
@@ -16,7 +16,7 @@
 		</nav>
 		<nav class="lg:flex max-w-sm hidden flex-col bg-sidebar">
 			<div class="pt-8 pb-2 px-8">
-				<img class="object-cover rounded-full w-full" src="/images/img_0123-02.webp" />
+				<img class="object-cover rounded-full w-full" src="/images/torbjorn.jpeg" />
 			</div>
 			<div class="text-center">
 				<h5>Torbjørn Holtmon</h5>
