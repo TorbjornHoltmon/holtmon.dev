@@ -73,6 +73,23 @@ export default {
 		// Doc: https://content.nuxtjs.org/
 		"@nuxt/content",
 	],
+	csp: {
+		reportOnly: true,
+		hashAlgorithm: "sha256",
+		policies: {
+			"default-src": ["'self'"],
+			"img-src": ["https:", "*.google-analytics.com"],
+			"worker-src": ["'self'", `blob:`],
+			"style-src": ["'self'", "'unsafe-inline'"],
+			"script-src": ["'self'", "'unsafe-inline'"],
+			"connect-src": [],
+			"form-action": ["'self'"],
+			"frame-ancestors": ["'none'"],
+			"object-src": ["'none'"],
+			"base-uri": [],
+			"report-uri": [],
+		},
+	},
 	/*
 	 ** Axios module configuration
 	 ** See https://axios.nuxtjs.org/options
@@ -81,7 +98,7 @@ export default {
 	/*
 	 ** Generate Config
 	 */
-	generate: {
+	export: {
 		fallback: true,
 		async routes() {
 			const { $content } = require("@nuxt/content");
