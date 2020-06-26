@@ -76,6 +76,8 @@ export default {
 	// CSP
 	csp: {
 		hashAlgorithm: "sha256",
+		unsafeInlineCompatibility: true,
+		addMeta: true,
 		policies: {
 			"default-src": ["'self'"],
 			"img-src": ["https:", "'self'"],
