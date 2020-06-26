@@ -16,7 +16,7 @@
 		</nav>
 		<nav class="lg:flex max-w-sm hidden flex-col bg-sidebar">
 			<div class="pt-8 pb-2 px-8">
-				<img class="object-cover rounded-full w-full" src="/images/img_0123-02.jpeg" />
+				<img class="object-cover rounded-full w-full" src="/images/img_0123-02.webp" />
 			</div>
 			<div class="text-center">
 				<h5>Torbjørn Holtmon</h5>
