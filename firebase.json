@@ -29,7 +29,7 @@
 					},
 					{
 						"key": "Content-Security-Policy",
-						"value": "default-src 'self' ; script-src 'self' 'unsafe-inline' https://ajax.cloudflare.com/ https://use.fortawesome.com https://app.forestry.io https://www.google-analytics.com/analytics.js ; connect-src 'self' https://app.forestry.io ; style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://app.forestry.io https://use.fortawesome.com/ https://fonts.googleapis.com ; img-src 'self' data: ; font-src 'self' https://use.fortawesome.com/ https://fonts.gstatic.com https://fonts.googleapis.com ; media-src 'self' ; frame-src 'self' ; frame-ancestors 'self' ; form-action 'self' ;"
+						"value": "default-src 'self' ; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com https://ajax.cloudflare.com/ https://use.fortawesome.com https://app.forestry.io https://www.google-analytics.com/analytics.js ; connect-src 'self' https://app.forestry.io ; style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://app.forestry.io https://use.fortawesome.com/ https://fonts.googleapis.com ; img-src 'self' data: ; font-src 'self' data: https://use.fortawesome.com/ https://fonts.gstatic.com https://fonts.googleapis.com ; media-src 'self' ; frame-src 'self' ; frame-ancestors 'self' ; form-action 'self' ;"
 					}
 				]
 			}
