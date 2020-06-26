@@ -7,7 +7,7 @@
 	<div class="flex lg:flex-row flex-col lg:h-screen h-auto">
 		<nav class="lg:hidden flex bg-sidebar p-6">
 			<div class="w-32 text-center">
-				<img class="object-cover rounded-full w-full" src="/images/img_0123-02.jpeg" />
+				<img class="object-cover rounded-full w-full" src="/images/img_0123-02.webp" />
 			</div>
 			<div class="flex flex-1 items-center">
 				<h1 class="ml-8 mr-8 mb-0">Blog</h1>
