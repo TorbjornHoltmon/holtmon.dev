@@ -82,7 +82,7 @@ export default {
 			"font-src": ["'self'"],
 			"media-src": ["'self'"],
 			"frame-src": ["'self'"],
-			"style-src": ["'self'", "'unsafe-inline'"],
+			"style-src": ["'self'"],
 			"script-src": ["'self'", "'unsafe-inline'"],
 			"connect-src": ["self"],
 			"form-action": ["'self'"],
@@ -118,6 +118,19 @@ export default {
 		/*
 		 ** You can extend webpack config here
 		 */
+		extractCSS: true,
+		optimization: {
+			splitChunks: {
+				cacheGroups: {
+					styles: {
+						name: "styles",
+						test: /\.(css|vue)$/,
+						chunks: "all",
+						enforce: true,
+					},
+				},
+			},
+		},
 		extend(config, ctx) {
 			if (ctx.isDev && ctx.isClient && process.env.BUILD_MODE === "development") {
 				config.devtool = "#source-map";
