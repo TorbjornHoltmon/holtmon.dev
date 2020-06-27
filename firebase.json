@@ -5,29 +5,7 @@
 		"trailingSlash": false,
 		"headers": [
 			{
-				"source": "**",
-				"headers": [
-					{
-						"key": "X-Frame-Options",
-						"value": "SAMEORIGIN"
-					},
-					{
-						"key": "X-Content-Type-Options",
-						"value": "nosniff"
-					},
-					{
-						"key": "X-XSS-Protection",
-						"value": "1; mode=block"
-					},
-					{
-						"key": "Referrer-Policy",
-						"value": "strict-origin"
-					},
-					{
-						"key": "Feature-Policy",
-						"value": "accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'"
-					}
-				]
+				"source": "**"
 			}
 		]
 	}
