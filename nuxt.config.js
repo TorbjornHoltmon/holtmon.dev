@@ -13,7 +13,7 @@ export default {
 			{
 				hid: "description",
 				name: "description",
-				content: process.env.npm_package_description || "",
+				content: "Web developer Torbjørn Holtmon's personal website",
 			},
 		],
 		link: [
