@@ -1,8 +1,7 @@
 ---
 tags: []
-title: ''
-date: 
-description: ''
-poster: ''
-
+title: ""
+date:
+description: ""
+poster: ""
 ---

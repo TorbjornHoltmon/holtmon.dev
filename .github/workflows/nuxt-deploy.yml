@@ -6,9 +6,9 @@ name: Nuxt Deploy
 # events but only for the master branch
 on:
   push:
-    branches: [ staging ]
+    branches: [staging]
   pull_request:
-    branches: [ staging ]
+    branches: [staging]
 
 jobs:
   build:
@@ -70,4 +70,4 @@ jobs:
         with:
           args: deploy --only hosting
         env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}    
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
