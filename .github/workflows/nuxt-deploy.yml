@@ -63,7 +63,7 @@ jobs:
         run: |
           find ./dist -name '*.html' | xargs sed -n 's:.*<script>\(.*\)</script>.*:\1:p' | sed 's/<\/script>.*//g' > nuxt-unsafe-inline-scripts
           cat nuxt-unsafe-inline-scripts | while read line; do printf $line | openssl sha256 -binary | openssl base64 >> csp-hashes; done
-          cat csp-hashes | while read line; do  echo "sha256-$line" >> sha256-csp-hashes; done
+          cat csp-hashes | while read line; do  echo "'sha256-$line'" >> sha256-csp-hashes; done
           sed -i -r "s:(script-src):\1 $(paste -sd ' ' sha256-csp-hashes) :g" firebase.json
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
