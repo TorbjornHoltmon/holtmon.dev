@@ -1,0 +1,2 @@
+find ./dist -name '*.html' | xargs sed -n 's:.*<script>\(.*\)</script>.*:\1:p' | sed 's/<\/script>.*//g'
+echo -n 'window.__NUXT__={config:{},staticAssetsBase:"/_nuxt/static/1597917961"}' | openssl sha256 -binary | openssl base64
