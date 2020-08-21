@@ -37,8 +37,8 @@
         "source": "/articles/test-article-1",
         "headers": [
           {
-            "key": "Not-A-Valid-Header",
-            "value": "This header is not valid"
+            "key": "Content-Security-Policy",
+            "value": "append or overwrite?"
           }
         ]
       }
