@@ -1,7 +1,6 @@
 export default {
-  // mode: "universal",
-  mode: process.env.BUILD_MODE,
-  target: process.env.STATIC === "true" ? "static" : "",
+  mode: "universal",
+  target: "static",
   /*
    ** Headers of the page
    */
@@ -102,7 +101,7 @@ export default {
   /*
    ** Generate Config
    */
-  export: {
+  generate: {
     fallback: true,
     async routes() {
       const { $content } = require("@nuxt/content");
