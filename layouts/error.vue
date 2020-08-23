@@ -3,6 +3,7 @@
   export default Vue.extend({
     // eslint-disable-next-line vue/require-prop-types
     props: ["error"],
+    layout: "none",
   });
 </script>
 
