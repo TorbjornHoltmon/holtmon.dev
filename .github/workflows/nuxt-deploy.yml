@@ -14,6 +14,10 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.8]
+
     steps:
       - name: Cancel Previous Runs
         uses: styfle/cancel-workflow-action@0.4.0
@@ -41,11 +45,15 @@ jobs:
         with:
           name: dist
           path: dist
-      - name: Set Inline script CSP
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
         run: |
-          find ./dist -name '*.html' | xargs sed -n 's:.*<script>\(.*\)</script>.*:\1:p' | sed 's/<\/script>.*//g' > nuxt-unsafe-inline-scripts
-          cat nuxt-unsafe-inline-scripts | while read line; do printf $line | openssl sha256 -binary | openssl base64 >> csp-hashes; done
-          cat csp-hashes | while read line; do  echo "'sha256-$line'" >> sha256-csp-hashes; done
-          sed -i -r "s:(script-src):\1 $(paste -sd ' ' sha256-csp-hashes) :g" firebase.json
+          python -m pip install --upgrade pip
+          pip install beautifulsoup4
+      - name: python csp
+        run: python content-security-policy.py
       - name: Deploy to firebase
         run: npm run firebase:deploy -- --token '${{ secrets.FIREBASE_TOKEN }}'
