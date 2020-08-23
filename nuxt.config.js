@@ -15,6 +15,7 @@ export default {
         content: "Web developer Torbjørn Holtmon's personal website",
       },
     ],
+    script: [{ src: "https://identity.netlify.com/v1/netlify-identity-widget.js" }],
     link: [
       {
         rel: "icon",

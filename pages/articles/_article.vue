@@ -15,7 +15,6 @@
 <template>
   <div class="container max-w-screen-sm md:max-w-screen-md mx-auto pl-4 pr-4 md:p-0">
     <nuxt-content :document="article" />
-    <div>Test</div>
   </div>
 </template>
 
