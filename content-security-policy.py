@@ -60,7 +60,7 @@ for root, dirs, files in os.walk("./dist"):
             hashes = get_sha256_base64_of_scripts(file_path)
             firebase_json_dict["hosting"]["headers"].append(
                 add_page_csp(base_csp, hashes))
-            print(add_page_csp(base_csp, hashes))
+            print(firebase_json_dict)
 
         # elif os.path.join(root, file) == "./dist/index.html":
         #     print("root")
