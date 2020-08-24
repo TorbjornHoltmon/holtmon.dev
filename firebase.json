@@ -34,7 +34,7 @@
         ]
       },
       {
-        "source": "/",
+        "source": "/admin.html",
         "headers": [
           {
             "key": "X-Frame-Options",
