@@ -1,7 +1,7 @@
 {
   "external": {
     "bitbucket": false,
-    "github": false,
+    "github": true,
     "gitlab": false,
     "google": false,
     "facebook": false,
