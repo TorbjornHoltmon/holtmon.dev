@@ -5,8 +5,8 @@
     "trailingSlash": false,
     "redirects": [
       {
-        "source": "/.netlify/settings",
-        "destination": "/.netlify/settings.json",
+        "source": "/.netlify/identity/settings",
+        "destination": "/.netlify/identity/settings.json",
         "type": 301
       }
     ],
