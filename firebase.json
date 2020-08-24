@@ -3,6 +3,13 @@
     "public": "dist",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "trailingSlash": false,
+    "redirects": [
+      {
+        "source": "/.netlify/settings",
+        "destination": "/.netlify/settings.json",
+        "type": 301
+      }
+    ],
     "headers": [
       {
         "source": "/",
