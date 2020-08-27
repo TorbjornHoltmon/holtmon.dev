@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
-  branch: staging
+  name: github
+  repo: TorbjornHoltmon/holtmon.dev # Your username and repository
+  branch: staging # Branch to use
+  base_url: https://us-central1-your-project-id.cloudfunctions.net # The base URL for your Firebase Function
+  auth_endpoint: /oauth/auth # The path to the OAuth endpoint of the function
 
 media_folder: static/images
 public_folder: /images
