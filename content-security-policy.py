@@ -72,9 +72,10 @@ for root, dirs, files in os.walk("./dist"):
             firebase_json_dict["hosting"]["headers"][0]["headers"][5] \
                 = add_root_csp(base_csp, hashes)
         elif file.endswith(".html"):
-            hashes = get_sha256_base64_of_scripts(file_path)
-            firebase_json_dict["hosting"]["headers"].append(
-                add_page_csp(base_config, hashes, file_path))
+            if file_path != "./dist/admin/index.html":
+                hashes = get_sha256_base64_of_scripts(file_path)
+                firebase_json_dict["hosting"]["headers"].append(
+                    add_page_csp(base_config, hashes, file_path))
 
 
 with open('firebase.json', 'w') as outfile:
