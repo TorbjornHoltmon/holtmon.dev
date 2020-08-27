@@ -37,7 +37,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
       - name: Install Dependencies
-        run: npm install
+        run: |
+          npm install
+          cd functions ; npm install
       - name: Build static site
         run: npm run generate
       - name: Set up Python ${{ matrix.python-version }}
