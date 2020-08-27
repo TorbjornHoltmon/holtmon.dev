@@ -1,7 +1,7 @@
 const functions = require("firebase-functions");
 const express = require("express");
 const simpleOauth = require("simple-oauth2");
-const randomstring = require("randomstring");
+const randomString = require("randomstring");
 
 const oauth = functions.config().oauth;
 
@@ -43,7 +43,7 @@ oauthApp.get("/auth", (_req, res) => {
   const authorizationUri = oauth2.authorizationCode.authorizeURL({
     redirect_uri: oauth.redirect_url,
     scope: oauth.scopes || "repo,user",
-    state: randomstring.generate(32),
+    state: randomString.generate(32),
   });
 
   res.redirect(authorizationUri);
@@ -72,6 +72,7 @@ oauthApp.get("/callback", async (req, res) => {
       })
     );
   } catch (error) {
+    // eslint-disable-next-line no-console
     console.error("Access Token Error", error.message);
     res.send(getScript("error", error));
   }
