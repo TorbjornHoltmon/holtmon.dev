@@ -3,12 +3,6 @@
     "public": "dist",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "trailingSlash": false,
-    "rewrites": [
-      {
-        "source": "/oauth",
-        "function": "oauth"
-      }
-    ],
     "headers": [
       {
         "source": "/",
