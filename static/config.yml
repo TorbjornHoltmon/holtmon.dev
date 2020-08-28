@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: TorbjornHoltmon/holtmon.dev y
+  repo: TorbjornHoltmon/holtmon.dev
   branch: staging
   base_url: https://us-central1-holtmon.cloudfunctions.net
   auth_endpoint: /oauth/auth
