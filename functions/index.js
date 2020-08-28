@@ -84,4 +84,4 @@ oauthApp.get("/", (_req, res) => {
   res.redirect(301, `/oauth/auth`);
 });
 
-exports.oauth = functions.https.onRequest(oauthApp);
+exports.oauth = functions.region("europe-west2").https.onRequest(oauthApp);
