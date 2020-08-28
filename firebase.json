@@ -5,7 +5,7 @@
     "trailingSlash": false,
     "rewrites": [
       {
-        "source": "/auth",
+        "source": "/oauth",
         "function": "oauth"
       }
     ],
