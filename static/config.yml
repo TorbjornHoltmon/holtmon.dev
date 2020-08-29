@@ -16,6 +16,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Poster Image", name: "poster_image", widget: "image" }
       - { label: "SEO Title", name: "seo_title", widget: "string" }
       - { label: "SEO Description", name: "seo_desc", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
