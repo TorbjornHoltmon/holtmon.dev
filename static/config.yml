@@ -1,9 +1,5 @@
 backend:
-  name: github
-  repo: TorbjornHoltmon/holtmon.dev
-  branch: staging
-  base_url: https://us-central1-holtmon.cloudfunctions.net
-  auth_endpoint: /oauth/auth
+  name: git-gateway
 
 media_folder: static/images
 public_folder: /images
