@@ -12,6 +12,7 @@ collections:
     folder: "content/articles"
     create: true
     slug: "{{slug}}"
+    preview_path: "articles/{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Poster Image", name: "poster_image", widget: "image" }
