@@ -36,6 +36,12 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+      - uses: actions/cache@v2
+        with:
+          path: '**/.firebase'
+          key: firebase-cache-files-${{ github.run_id }}
+          restore-keys: |
+            firebase-cache-files-
       - name: Install Dependencies
         run: |
           npm install
