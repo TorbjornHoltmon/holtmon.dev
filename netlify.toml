@@ -1,4 +1,0 @@
-[[plugins]]
-package = "netlify-plugin-cache-nextjs"
-	[plugins.inputs]
-	custom_build_dir_name = ".nuxt"
