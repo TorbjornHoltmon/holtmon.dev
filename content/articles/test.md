@@ -28,6 +28,8 @@ resources:
         TopicName: ${opt:stage, self:provider.stage}-publisher-one
 ```
 
+
+
 In order to publish a SNS message to a topic you have to know what their topic arn is which will look something like this: `arn:aws:sns:us-east-2:123456789012:MyTopic`.  You want to save the Topic arn of the Topics you just created in a environment variable that you can use later in the code.\
 You do do that by adding a reference to the topic resources in your list of environment variables:
 
@@ -43,6 +45,8 @@ provider:
       Ref: publisherOne
 ```
 
+
+
 The last part you need to add to your yml file now is the subscribers handler.
 
 `serverless.yml`
@@ -55,6 +59,8 @@ The last part you need to add to your yml file now is the subscribers handler.
           arn: ${self:provider.environment.SNS_PUBLISHER_ONE}
           topicName: ${opt:stage, self:provider.stage}-publisher-one
 ```
+
+
 
 And you are pretty much done. You can now use the enviroment variable to publish and subscribe with AWS SNS on your branches own SNS resources.\
 \
