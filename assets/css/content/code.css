@@ -10,6 +10,11 @@
   font-family: jetbrains-mono !important;
 }
 
+p > code {
+  background: rgb(61, 61, 61);
+  font-family: jetbrains-mono !important;
+}
+
 code[class*="language-"],
 pre[class*="language-"] {
   color: #ccc;
