@@ -15,10 +15,14 @@
         />
       </nuxt-link>
       <div class="flex flex-1 items-center">
-        <h1 class="ml-8 mr-8 mb-0">Articles</h1>
-        <h1 class="mb-0">Projects</h1>
+        <nuxt-link to="/">
+          <h4 class="ml-8 mr-8 mb-0">Articles</h4>
+        </nuxt-link>
+        <nuxt-link to="/projects/">
+          <h4 class="mb-0">Projects</h4>
+        </nuxt-link>
         <a href="https://github.com/TorbjornHoltmon" class="ml-8 mb-0 flex justify-center">
-          <img class="object-cover w-24" src="/images/Github-Logo.png" alt="Github profile link" />
+          <img class="object-cover w-16" src="/images/Github-Logo.png" alt="Github profile link" />
         </a>
       </div>
     </nav>
@@ -35,17 +39,21 @@
           <h5>Torbjørn Holtmon</h5>
         </nuxt-link>
         <h6>Developer @ <a href="https://www.makingwaves.com">Making Waves</a></h6>
-        <h1>Articles</h1>
-        <h1>Projects</h1>
+        <nuxt-link to="/">
+          <h1>Articles</h1>
+        </nuxt-link>
+        <nuxt-link to="/projects/">
+          <h1>Projects</h1>
+        </nuxt-link>
         <a href="https://github.com/TorbjornHoltmon" class="flex justify-center">
-          <img class="object-cover w-24" src="/images/Github-Logo.png" alt="Github profile link" />
+          <img class="object-cover w-16" src="/images/Github-Logo.png" alt="Github profile link" />
         </a>
       </div>
     </nav>
     <div class="flex-1 flex lg:overflow-hidden bg-background">
       <!-- Scrollable container -->
       <div class="w-full flex-1 overflow-hidden lg:overflow-y-scroll">
-        <div class="flex pt-8">
+        <div class="m-10">
           <nuxt />
         </div>
       </div>
