@@ -43,9 +43,7 @@ jobs:
           restore-keys: |
             firebase-cache-files-
       - name: Install Dependencies
-        run: |
-          npm install
-          cd functions ; npm install
+        run: npm install
       - name: Build static site
         run: npm run generate
       - name: Set up Python ${{ matrix.python-version }}
@@ -59,4 +57,4 @@ jobs:
       - name: python csp
         run: python content-security-policy.py
       - name: Deploy to firebase
-        run: npm run firebase:deploy -- --token '${{ secrets.FIREBASE_TOKEN }}'
+        run: npm run firebase:deploy -- --token '${{ secrets.FIREBASE_TOKEN }}' --only hosting
