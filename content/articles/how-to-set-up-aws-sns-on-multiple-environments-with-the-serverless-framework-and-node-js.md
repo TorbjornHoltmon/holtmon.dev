@@ -17,9 +17,7 @@ I have had to work with SNS in multiple environments once before and I had to ma
 
 First off, you want to create your SNS Topics and give them names corresponding to their current "stage" which will be your feature branch or production branch.
 
-`serverless.yml`
-
-```yaml
+```yaml{}[serverless.yml]
 resources:
   Resources:
     publisherOne:
@@ -33,9 +31,7 @@ In order to publish a SNS message to a topic you have to know what their topic a
 
 You do do that by adding a reference to the topic resources in your list of environment variables:
 
-`serverless.yml`
-
-```yaml
+```yaml{}[serverless.yml]
 provider:
   name: aws
   runtime: nodejs12.x
@@ -47,9 +43,7 @@ provider:
 
 The last part you need to add to your yml file now is the subscribers handler.
 
-`serverless.yml`
-
-```yaml
+```yaml{}[serverless.yml]
 subscriberOne:
   handler: src/subscriberOne.handler
   events:
@@ -62,9 +56,7 @@ And you are pretty much done. You can now use the enviroment variable to publish
 
 Here is a quick example:
 
-`src/publisherOne.js`
-
-```javascript
+```javascript{}[src/publisherOne.js]
 export default async function publishMessage() {
   // Create publish parameters
   const pubSubParams = {
@@ -83,9 +75,7 @@ export default async function publishMessage() {
 }
 ```
 
-`src/subscriberOne.js`
-
-```javascript
+```javascript{}[src/subscriberOne.js]
 exports.handler = async (event, _context, callback) => {
   const message = JSON.parse(event.Records[0].Sns.Message);
   // Hello World!
