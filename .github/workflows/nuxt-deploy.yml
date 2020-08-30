@@ -7,8 +7,12 @@ name: Nuxt Deploy
 on:
   push:
     branches: [staging]
+    paths-ignore:
+    - 'functions/**'
   pull_request:
     branches: [staging]
+    paths-ignore:
+    - 'functions/**'
 
 jobs:
   build:
