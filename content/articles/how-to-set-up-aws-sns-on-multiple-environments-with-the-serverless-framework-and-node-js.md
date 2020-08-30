@@ -69,6 +69,7 @@ export default async function publishMessage() {
 
   if (publishTextPromise.$response.data) {
     console.log("Message sent!");
+    return;
   }
   console.log("Message not sent! 😭");
   console.error(publishTextPromise.$response.error);
