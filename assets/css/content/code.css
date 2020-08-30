@@ -6,6 +6,10 @@
   border-radius: 0.5rem;
 }
 
+.nuxt-content-highlight {
+  position: relative;
+}
+
 .nuxt-content-highlight code {
   font-family: jetbrains-mono;
 }
