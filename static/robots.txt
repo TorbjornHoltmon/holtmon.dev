@@ -1,0 +1,5 @@
+Sitemap: https://holtmon.dev/sitemap.xml
+Sitemap: https://holtmon.dev/sitemap.xml.gz
+
+User-agent: *
+Disallow:
