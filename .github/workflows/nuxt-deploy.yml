@@ -6,11 +6,8 @@ name: Nuxt Deploy
 # events but only for the master branch
 on:
   push:
-    branches: [staging]
-    paths-ignore:
-    - 'functions/**'
-  pull_request:
-    branches: [staging]
+    branches:
+      - staging
     paths-ignore:
     - 'functions/**'
 
