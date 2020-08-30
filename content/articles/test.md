@@ -10,9 +10,9 @@ date: 2020-08-30T14:15:38.655Z
 description: How to get quickly started with AWS SNS on multiple environments
   with the serverless framework and node.js.
 ---
-In this short article I will not be explaining what the Serverless Framework is, if you don't know what it is I recommend checking it out! It makes working with AWS a breeze. 
+In this short article I will not be explaining what the [Serverless Framework](https://www.serverless.com/framework/docs/) is, if you don't know what it is I recommend checking it out! It makes working with AWS a breeze. 
 
-When working with SNS in multiple environments once before I had to makes sure all feature branches got their own SNS resource. The [Serverless documentation](https://www.serverless.com/framework/docs/providers/aws/events/sns/) gives some hints as to how to do this, but does not state it explicitly. 
+I have had to work with SNS in multiple environments once before and I had to makes sure all feature branches got their own SNS resource. The [Serverless documentation](https://www.serverless.com/framework/docs/providers/aws/events/sns/) gives some hints as to how to do this, but does not state it explicitly. 
 
 First off, you want to create your SNS Topics and give them names corresponding to their current "stage" which will be your feature branch or production branch.
 
