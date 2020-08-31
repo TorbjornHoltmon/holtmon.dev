@@ -110,6 +110,14 @@ export default {
     hostname: "https://holtmon.dev",
     gzip: true,
     exclude: ["/admin/**"],
+    trailingSlash: true,
+  },
+  /*
+   ** Router config
+   ** See https://github.com/nuxt-community/sitemap-module
+   */
+  router: {
+    trailingSlash: true,
   },
   /*
    ** Generate Config
@@ -125,7 +133,7 @@ export default {
       // Articles
       routes.push.apply(routes, await $content("articles").only(["path"]).fetch());
 
-      return routes.map((file) => (file.path === "/index" ? "/" : file.path));
+      return routes.map((file) => (file.path === "/index" ? "/" : file.path + "/"));
     },
   },
   /*
