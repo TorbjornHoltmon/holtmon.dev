@@ -10,9 +10,10 @@ date: 2020-08-30T14:15:38.655Z
 description: How to get quickly started with AWS SNS on multiple environments
   with the serverless framework and node.js.
 ---
-In this short article I will not be explaining what the [Serverless Framework](https://www.serverless.com/framework/docs/) is, if you don't know what it is I recommend checking it out! It makes working with AWS a breeze. 
 
-I have had to work with SNS in multiple environments once before and I had to makes sure all feature branches got their own SNS resource. The [Serverless documentation](https://www.serverless.com/framework/docs/providers/aws/events/sns/) gives some hints as to how to do this, but does not state it explicitly. 
+In this short article I will not be explaining what the [Serverless Framework](https://www.serverless.com/framework/docs/) is, if you don't know what it is I recommend checking it out! It makes working with AWS a breeze.
+
+I have had to work with SNS in multiple environments once before and I had to makes sure all feature branches got their own SNS resource. The [Serverless documentation](https://www.serverless.com/framework/docs/providers/aws/events/sns/) gives some hints as to how to do this, but does not state it explicitly.
 
 First off, you want to create your SNS Topics and give them names corresponding to their current "stage" which will be your feature branch or production branch.
 
@@ -28,7 +29,7 @@ resources:
         TopicName: ${opt:stage, self:provider.stage}-publisher-one
 ```
 
-In order to publish a SNS message to a topic you have to know what their topic arn is which will look something like this: `arn:aws:sns:us-east-2:123456789012:MyTopic`.  You want to save the Topic arn of the Topics you just created in a environment variable that you can use later in the code.
+In order to publish a SNS message to a topic you have to know what their topic arn is which will look something like this: `arn:aws:sns:us-east-2:123456789012:MyTopic`. You want to save the Topic arn of the Topics you just created in a environment variable that you can use later in the code.
 
 You do do that by adding a reference to the topic resources in your list of environment variables:
 
@@ -49,16 +50,16 @@ The last part you need to add to your yml file now is the subscribers handler.
 `serverless.yml`
 
 ```yaml
-  subscriberOne:
-    handler: src/subscriberOne.handler
-    events:
-      - sns:
-          arn: ${self:provider.environment.SNS_PUBLISHER_ONE}
-          topicName: ${opt:stage, self:provider.stage}-publisher-one
+subscriberOne:
+  handler: src/subscriberOne.handler
+  events:
+    - sns:
+        arn: ${self:provider.environment.SNS_PUBLISHER_ONE}
+        topicName: ${opt:stage, self:provider.stage}-publisher-one
 ```
 
-And you are pretty much done. You can now use the enviroment variable to publish and subscribe with AWS SNS on your branches own SNS resources.\
-\
+And you are pretty much done. You can now use the enviroment variable to publish and subscribe with AWS SNS on your branches own SNS resources.
+
 Here is a quick example:
 
 `src/publisherOne.js`
@@ -75,7 +76,7 @@ export default async function publishMessage() {
   const publishTextPromise = await getAWSSNS().publish(pubSubParams).promise();
 
   if (publishTextPromise.$response.data) {
-      console.log("Message sent!");
+    console.log("Message sent!");
   }
   console.log("Message not sent! 😭");
   console.error(publishTextPromise.$response.error);

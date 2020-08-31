@@ -11,7 +11,7 @@
         <img class="object-cover rounded-full w-full" src="/images/torbjorn.jpg" />
       </div>
       <div class="flex flex-1 items-center">
-        <h1 class="ml-8 mr-8 mb-0">Blog</h1>
+        <h1 class="ml-8 mr-8 mb-0">Articles</h1>
         <h1 class="mb-0">Projects</h1>
       </div>
     </nav>
@@ -22,7 +22,7 @@
       <div class="text-center">
         <h5>Torbjørn Holtmon</h5>
         <h6>Developer @ <a href="https://www.makingwaves.com">Making Waves</a></h6>
-        <h1>Blog</h1>
+        <h1>Articles</h1>
         <h1>Projects</h1>
       </div>
     </nav>

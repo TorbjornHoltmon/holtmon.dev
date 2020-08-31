@@ -5,7 +5,10 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: "Torbjørn Holtmon" || "",
+    title: "Torbjørn Holtmon",
+    htmlAttrs: {
+      lang: "en",
+    },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -70,6 +73,8 @@ export default {
     "@nuxtjs/dotenv",
     // Doc: https://content.nuxtjs.org/
     "@nuxt/content",
+    // Doc : https://github.com/nuxt-community/sitemap-module
+    "@nuxtjs/sitemap",
   ],
   // CSP
   // Not working
@@ -97,6 +102,15 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
+  /*
+   ** Sitemape module configuration
+   ** See https://github.com/nuxt-community/sitemap-module
+   */
+  sitemap: {
+    hostname: "https://holtmon.dev",
+    gzip: true,
+    exclude: ["/admin/**"],
+  },
   /*
    ** Generate Config
    */

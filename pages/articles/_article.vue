@@ -18,10 +18,12 @@
 </script>
 
 <template>
-  <div class="container max-w-screen-sm md:max-w-screen-md mx-auto pl-4 pr-4 md:p-0">
-    <h1>{{ article.title }}</h1>
+  <article class="container max-w-screen-sm md:max-w-screen-md mx-auto pl-4 pr-4 md:p-0">
+    <h2>{{ article.title }}</h2>
+    <p>Last updated: {{ article.date.split("T")[0] }}</p>
+    <img class="object-cover w-full" :src="article.poster_image" alt="Article header image" />
     <nuxt-content :document="article" />
-  </div>
+  </article>
 </template>
 
 <style></style>
