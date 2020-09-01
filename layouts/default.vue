@@ -6,25 +6,23 @@
 
 <template>
   <div class="flex lg:flex-row flex-col lg:h-screen h-auto">
-    <nav class="lg:hidden flex bg-sidebar p-6">
-      <nuxt-link to="/" class="w-32 text-center">
+    <nav class="lg:hidden flex flex-1 items-center bg-sidebar p-6">
+      <nuxt-link to="/">
         <img
-          class="object-scale-down rounded-full w-full"
+          class="object-scale-down rounded-full w-32"
           src="/images/torbjorn.jpg"
           alt="Profile picture of Torbjørn"
         />
       </nuxt-link>
-      <div class="flex flex-1 items-center">
-        <nuxt-link to="/">
-          <h4 class="ml-8 mr-8 mb-0">Articles</h4>
-        </nuxt-link>
-        <nuxt-link to="/projects/">
-          <h4 class="mb-0">Projects</h4>
-        </nuxt-link>
-        <a href="https://github.com/TorbjornHoltmon" class="ml-8 mb-0 flex justify-center">
-          <img class="object-scale-down w-16" src="/images/Github-Logo.png" alt="Github profile link" />
-        </a>
-      </div>
+      <nuxt-link to="/">
+        <h4 class="ml-8 mr-8 mb-0">Articles</h4>
+      </nuxt-link>
+      <nuxt-link to="/projects/">
+        <h4 class="mb-0">Projects</h4>
+      </nuxt-link>
+      <a href="https://github.com/TorbjornHoltmon" class="ml-8 mb-0 flex justify-center">
+        <img class="object-scale-down w-16" src="/images/Github-Logo.png" alt="Github profile link" />
+      </a>
     </nav>
     <nav class="lg:flex max-w-sm hidden flex-col bg-sidebar">
       <nuxt-link to="/" class="pt-8 pb-2 px-8">
