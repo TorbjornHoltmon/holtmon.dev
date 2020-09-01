@@ -9,7 +9,7 @@
     <nav class="lg:hidden flex bg-sidebar p-6">
       <nuxt-link to="/" class="w-32 text-center">
         <img
-          class="object-cover rounded-full w-full"
+          class="object-scale-down rounded-full w-full"
           src="/images/torbjorn.jpg"
           alt="Profile picture of Torbjørn"
         />
@@ -22,14 +22,14 @@
           <h4 class="mb-0">Projects</h4>
         </nuxt-link>
         <a href="https://github.com/TorbjornHoltmon" class="ml-8 mb-0 flex justify-center">
-          <img class="object-cover w-16" src="/images/Github-Logo.png" alt="Github profile link" />
+          <img class="object-scale-down w-16" src="/images/Github-Logo.png" alt="Github profile link" />
         </a>
       </div>
     </nav>
     <nav class="lg:flex max-w-sm hidden flex-col bg-sidebar">
       <nuxt-link to="/" class="pt-8 pb-2 px-8">
         <img
-          class="object-cover rounded-full w-full"
+          class="object-scale-down rounded-full w-full"
           src="/images/torbjorn.jpg"
           alt="Profile picture of Torbjørn"
         />
@@ -46,7 +46,7 @@
           <h1>Projects</h1>
         </nuxt-link>
         <a href="https://github.com/TorbjornHoltmon" class="flex justify-center">
-          <img class="object-cover w-16" src="/images/Github-Logo.png" alt="Github profile link" />
+          <img class="object-scale-down w-16" src="/images/Github-Logo.png" alt="Github profile link" />
         </a>
       </div>
     </nav>
