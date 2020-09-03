@@ -6,7 +6,7 @@
 
 <template>
   <div class="flex lg:flex-row flex-col lg:h-screen h-auto">
-    <nav class="lg:hidden flex flex-1 items-center bg-sidebar p-6">
+    <nav class="lg:hidden flex flex-1 items-center bg-sidebar p-3">
       <nuxt-link to="/">
         <img
           class="object-scale-down rounded-full w-32"
