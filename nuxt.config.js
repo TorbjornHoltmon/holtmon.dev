@@ -109,6 +109,7 @@ export default {
     sitemap: {
         hostname: "https://holtmon.dev",
         gzip: true,
+        trailingSlash: false,
     },
     /*
      ** Router config
@@ -129,7 +130,7 @@ export default {
             // Articles
             routes.push.apply(routes, await $content("articles").only(["path"]).fetch());
 
-            return routes.map((file) => (file.path === "/index" ? "/" : file.path + "/"));
+            return routes.map((file) => (file.path === "/index" ? "/" : file.path));
         },
     },
     /*
