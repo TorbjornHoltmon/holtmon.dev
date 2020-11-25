@@ -109,16 +109,12 @@ export default {
     sitemap: {
         hostname: "https://holtmon.dev",
         gzip: true,
-        exclude: ["/admin/**"],
-        trailingSlash: true,
     },
     /*
      ** Router config
      ** See https://github.com/nuxt-community/sitemap-module
      */
-    router: {
-        trailingSlash: true,
-    },
+    router: {},
     /*
      ** Generate Config
      */
