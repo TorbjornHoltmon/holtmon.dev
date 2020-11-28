@@ -20,14 +20,14 @@ p > code {
 }
 
 .filename {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-top: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px; /* Need a specific value to work */
     color: #bdbdbd;
+    position: absolute;
+    padding: 3em 1em 1em 1em;
+    top: 0%; /* this to center the box w.r.t to parent */
+    left: 50%; /* this to center the box w.r.t to parent */
+    /* Above 2 lines wont fully center it, the next line internally centers it, buy moving itself 50% left and top */
+    transform: translate(-50%, -50%);
+    margin: auto;
 }
 
 code[class*="language-"],

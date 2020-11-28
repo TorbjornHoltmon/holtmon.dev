@@ -2,7 +2,7 @@
     <div class="container max-w-screen-sm md:max-w-screen-md mx-auto">
         <h1 class="text-left">Articles</h1>
         <hr class="mb-10" />
-        <div v-for="article of articles" :key="article.slug">
+        <div v-for="article of articles" :key="article.slug" class="mb-10">
             <h5>
                 <NuxtLink :to="{ name: 'articles-article', params: { article: article.slug } }">
                     {{ article.title }}
