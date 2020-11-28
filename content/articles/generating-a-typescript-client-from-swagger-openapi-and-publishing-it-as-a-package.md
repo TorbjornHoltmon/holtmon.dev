@@ -1,13 +1,10 @@
 ---
-title: Generating a Typescript client from Swagger / OpenApi with Dotnet and publishing it as a pacge.
+title: Generating a Typescript client from Swagger / OpenApi with Dotnet and publishing it as a package.
 poster_image: /images/OpenAPI_Logo.png
-seo_title: How to set up AWS SNS on multiple environments with the serverless
-    framework and node.js.
-seo_desc: How to get quickly started with AWS SNS on multiple environments with
-    the serverless framework and node.js.
+seo_title: Generating a Typescript client from Swagger / OpenApi with Dotnet and publishing it as a package
+seo_desc: Generating a Typescript client from Swagger / OpenApi with Dotnet and publishing it as a package
 date: 2020-12-01
-description: How to get quickly started with AWS SNS on multiple environments
-    with the serverless framework and node.js.
+description: Generating a Typescript client from Swagger / OpenApi with Dotnet and publishing it as a package
 ---
 
 There are many ways that you can generate a client from swagger. One of them is using Dotnet and the library [Nswag](https://github.com/RicoSuter/NSwag).
