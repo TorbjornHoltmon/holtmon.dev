@@ -72,7 +72,7 @@ Update the package name and package output in `Rollup-Client/package.json`
 
 Now all you need to do is push the changes to your repo and github actions will build your package from the generated client.
 
-To use your client you will need to be authorized. To authorize yourselves go to [your personal access tokens on github](http://github.com/settings/tokens) and create a new token with "repo" and "read:packages" scopes.
+To install your client package you will need to be authorized. To authorize yourselves go to [your personal access tokens on github](http://github.com/settings/tokens) and create a new token with "repo" and "read:packages" scopes.
 
 ![Github token generation](/images/github-token-generation.png)
 
