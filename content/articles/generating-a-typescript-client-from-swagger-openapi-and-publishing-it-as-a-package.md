@@ -5,7 +5,7 @@ seo_title: How to set up AWS SNS on multiple environments with the serverless
     framework and node.js.
 seo_desc: How to get quickly started with AWS SNS on multiple environments with
     the serverless framework and node.js.
-date: 2020-11-28
+date: 2020-12-01
 description: How to get quickly started with AWS SNS on multiple environments
     with the serverless framework and node.js.
 ---
