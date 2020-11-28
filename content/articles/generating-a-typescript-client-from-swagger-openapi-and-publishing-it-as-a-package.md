@@ -147,4 +147,4 @@ If you don't have any need for an npm package you can use the client as is and c
 
 If you are using javascript in your project you will need to package your client before use. Use the rollup config I have in my repo or use your preferred bundler.
 
-I hope this guide has helped you. If you have any issues or questions, don't hesitate to (create an issue on my repo)[https://github.com/TorbjornHoltmon/Generate-Typescript-Client-From-OpenApi], and I will do what I can to help.
+I hope this guide has helped you. If you have any issues or questions, don't hesitate to [create an issue on my repo](https://github.com/TorbjornHoltmon/Generate-Typescript-Client-From-OpenApi), and I will do what I can to help.
