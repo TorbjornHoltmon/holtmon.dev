@@ -12,13 +12,13 @@ description: How to get quickly started with AWS SNS on multiple environments
 
 There are many ways that you can generate a client from swagger. One of them is using Dotnet and the library [Nswag](https://github.com/RicoSuter/NSwag).
 
-In this article I will detail how you can create your a Typescript client, transpile and package it, and finally publish it as a github npm package that you can consume on your frontend. The result will be a repository where all you need to do is update the package version, and github actions will update the client with the newest version of the OpenApi documentation.
+In this article I will detail how you can create a Typescript client from Swagger / OpenApi, transpile and package it, and finally publish it as a github npm package that you can consume on your frontend. The result will be a repository where all you need to do is update the package version, and github actions will update the client with the newest version of the Swagger / OpenApi documentation.
 
 #### Using my pre-configured repo
 
 Further down the article I will explain how to set this up for yourselves. If you are not interested in the details you only need to [download my repo which is available here](www.google.com) and make these changes:
 
-Update the nswag.json to match your Swagger / OpenApi docs and name your client in `Dotnet.OpenApi.Client.Generator/nswag.json`
+Update the `nswag.json` to match your Swagger / OpenApi docs in `Dotnet.OpenApi.Client.Generator/nswag.json`
 
 ```json{}[Dotnet.OpenApi.Client.Generator/nswag.json]
 {
@@ -84,7 +84,7 @@ Open your terminal and run:
 
 And enter your username, use your token as the password and finally it will ask for your email.
 
-The last thing you need to do now is add a `.npmrc` in the project that you wish to install your package in and add this line:
+The last thing you need to do now is add a `.npmrc` file in the project that you wish to install your package in and add this line:
 
 `@YouGithubUsername:registry=https://npm.pkg.github.com/YourGithubUsername`
 
@@ -96,13 +96,15 @@ Works brilliantly!
 
 ![Github token generation](/images/generated-client-test.gif)
 
-#### Setting up and configuring your own generator.
+All you have to do to update the client with the newest swagger docs is to bump the version in `package.json` and Github actions will do the rest.
+
+#### Setting up and configuring your own generator
 
 To setup this project [you will need to download .Net 5](https://dotnet.microsoft.com/download). After dotnet is installed, create your project directory and open your terminal in the directory and run:
 
 `dotnet new classlib --framework net5.0 --name Dotnet.OpenApi.Client.Generator`
 
-The class library will create a class, this project won't be needing any code so you are free to delete it.
+The class library will have a class, this project won't be needing any code so you are free to delete it.
 
 Open up the `.csproj` project file and add the necessary packages and the build script:
 
@@ -136,15 +138,16 @@ Open up the `.csproj` project file and add the necessary packages and the build 
 
 Next up you will need to configure your nswag.json file, [unfortunately the json file is not very well documented](https://github.com/RicoSuter/NSwag/wiki/NSwag-Configuration-Document). I recommend configuring it manually [through their GUI](https://github.com/RicoSuter/NSwag/wiki/NSwagStudio) (Windows only unfortunately) which will show you all possible options for your client.
 
-The settings in my `nswag.json` is what I recommend, and will work well. There is currently a bug when using axios as your client, so if you are not using my configuration and bundler I recommend using `Fetch` as your `template` in `nswag.json` instead.
-I implemented a temporary workaround with class a class extension. You can configure your client with some extension methods and options, I might write about how to do that in the future.
+The settings in my `nswag.json` is what I personally recommend, and will work well. There is currently a bug at the time of writing this when using axios as your client. If you are not using my configuration and bundler I instead recommend using `Fetch` as your `template` in `nswag.json` instead.
 
-Using `Axios` as your template is what I recommend, you can create your own axios client and add headers and other options on the client side and then pass it to the generated client. Very handy when adding authorization headers. Its a convenient and well documented library, and much easier to configure than extending the generated client.
+I implemented a temporary workaround to the bug in my client with class extensions. You can configure your client with some extension methods and options.
+
+The reason why i recommend `Axios` is that you can create your own axios client and add headers and other options on the client side and then pass it to the generated client. Very handy when adding authorization headers. It is a convenient and well documented library, and much easier to configure than extending the generated client.
 
 To build the client, first run: `dotnet restore` then `dotnet build` in your project directory. Remember to set your output location in `nswag.json`.
 
 If you don't have any need for an npm package you can use the client as is and copy it to your typescript project.
 
-If you are using javascript in your project you will need to package your client before use. Use the rollup config I have in my repo or use your preferred bundler.
+**If you are using javascript in your project you will need to package your client before use. Use the rollup config I have in my repo or use your preferred bundler.**
 
 I hope this guide has helped you. If you have any issues or questions, don't hesitate to [create an issue on my repo](https://github.com/TorbjornHoltmon/Generate-Typescript-Client-From-OpenApi), and I will do what I can to help.
