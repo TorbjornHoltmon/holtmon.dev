@@ -13,7 +13,7 @@ In this article I will detail how you can create a Typescript client from Swagge
 
 #### Using my pre-configured repo
 
-Further down the article I will explain how to set this up for yourselves. If you are not interested in the details you only need to [download my repo which is available here](www.google.com) and make these changes:
+Further down the article I will explain how to set this up for yourselves. If you are not interested in the details you only need to [download my repo which is available here](https://github.com/TorbjornHoltmon/Generate-Typescript-Client-From-OpenApi) and make these changes:
 
 Update the `nswag.json` to match your Swagger / OpenApi docs in `Dotnet.OpenApi.Client.Generator/nswag.json`
 
