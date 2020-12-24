@@ -69,7 +69,13 @@ export default {
         "@nuxt/typescript-build",
         // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
         "@nuxtjs/tailwindcss",
+        // Doc: https://github.com/juliomrqz/nuxt-optimized-images
+        "@aceforth/nuxt-optimized-images",
     ],
+
+    optimizedImages: {
+        optimizeImages: true,
+    },
     /*
      ** Nuxt.js modules
      */

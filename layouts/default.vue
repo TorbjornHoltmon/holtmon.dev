@@ -1,12 +1,12 @@
 <template>
     <div class="flex lg:flex-row flex-col lg:h-screen h-auto">
-        <nav class="lg:hidden flex flex-1 items-center bg-sidebar p-3">
+        <nav class="lg:hidden flex flex-1 items-center justify-around bg-sidebar p-3">
             <nuxt-link to="/">
-                <img
-                    class="object-scale-down rounded-full w-32"
-                    src="/images/torbjorn.jpg"
-                    alt="Profile picture of Torbjørn"
-                />
+                <picture class="object-scale-down rounded-full w-32" alt="Profile picture of Torbjørn">
+                    <source :srcSet="require('~/assets/images/torbjorn.jpg?webp')" type="image/webp" />
+                    <source :srcSet="require('~/assets/images/torbjorn.jpg')" type="image/jpeg" />
+                    <img :src="require('~/assets/images/torbjorn.jpg')" />
+                </picture>
             </nuxt-link>
             <nuxt-link to="/">
                 <h4 class="ml-8 mr-8 mb-0">Articles</h4>
@@ -20,11 +20,11 @@
         </nav>
         <nav class="lg:flex max-w-sm hidden flex-col bg-sidebar">
             <nuxt-link to="/" class="pt-8 pb-2 px-8">
-                <img
-                    class="object-scale-down rounded-full w-full"
-                    src="/images/torbjorn.jpg"
-                    alt="Profile picture of Torbjørn"
-                />
+                <picture class="object-scale-down rounded-full w-full" alt="Profile picture of Torbjørn">
+                    <source :srcSet="require('~/assets/images/torbjorn.jpg?webp')" type="image/webp" />
+                    <source :srcSet="require('~/assets/images/torbjorn.jpg')" type="image/jpeg" />
+                    <img :src="require('~/assets/images/torbjorn.jpg')" />
+                </picture>
             </nuxt-link>
             <div class="text-center">
                 <nuxt-link to="/">
