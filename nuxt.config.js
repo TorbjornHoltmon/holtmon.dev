@@ -75,6 +75,7 @@ export default {
 
     optimizedImages: {
         optimizeImages: true,
+        imagesName: ({ isDev }) => (isDev ? "[path][name][hash:optimized].[ext]" : "img/[path][name].[ext]"),
     },
     /*
      ** Nuxt.js modules
