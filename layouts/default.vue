@@ -29,7 +29,25 @@
                 <h4 class="mb-0">Projects</h4>
             </nuxt-link>
             <a href="https://github.com/TorbjornHoltmon" class="ml-8 mb-0 flex justify-center">
-                <img class="object-scale-down w-16" src="/images/Github-Logo.png" alt="Github profile link" />
+                <picture>
+                    <source
+                        class="object-scale-down w-16"
+                        alt="Github profile link"
+                        :srcSet="require('~/assets/images/Github-Logo.png?webp')"
+                        type="image/webp"
+                    />
+                    <source
+                        class="object-scale-down w-16"
+                        alt="Github profile link"
+                        :srcSet="require('~/assets/images/Github-Logo.png')"
+                        type="image/png"
+                    />
+                    <img
+                        class="object-scale-down w-16"
+                        alt="Github profile link"
+                        :src="require('~/assets/images/Github-Logo.png')"
+                    />
+                </picture>
             </a>
         </nav>
         <nav class="lg:flex max-w-sm hidden flex-col bg-sidebar">
@@ -66,11 +84,25 @@
                     <h1>Projects</h1>
                 </nuxt-link>
                 <a href="https://github.com/TorbjornHoltmon" class="flex justify-center">
-                    <img
-                        class="object-scale-down w-16"
-                        src="/images/Github-Logo.png"
-                        alt="Github profile link"
-                    />
+                    <picture>
+                        <source
+                            class="object-scale-down w-16"
+                            alt="Github profile link"
+                            :srcSet="require('~/assets/images/Github-Logo.png?webp')"
+                            type="image/webp"
+                        />
+                        <source
+                            class="object-scale-down w-16"
+                            alt="Github profile link"
+                            :srcSet="require('~/assets/images/Github-Logo.png')"
+                            type="image/png"
+                        />
+                        <img
+                            class="object-scale-down w-16"
+                            alt="Github profile link"
+                            :src="require('~/assets/images/Github-Logo.png')"
+                        />
+                    </picture>
                 </a>
             </div>
         </nav>
