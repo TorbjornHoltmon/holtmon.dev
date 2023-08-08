@@ -12,6 +12,8 @@ on:
 
 jobs:
   build-and-deploy:
+    env:
+      NODE_OPTIONS: "--max-old-space-size=4096"
     timeout-minutes: 8
     name: Deploy
     runs-on: ubuntu-latest
