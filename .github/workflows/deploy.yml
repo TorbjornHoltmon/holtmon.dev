@@ -58,8 +58,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: gullfunn
-          workingDirectory: apps/web
+          projectName: holtmon
           branch: "main"
           directory: dist
           # Optional: Enable this if you want to have GitHub Deployments triggered
