@@ -1,5 +1,5 @@
 const cacheHeader = {
-  "Cache-Control": "public, max-age=600, s-maxage=172800, stale-while-revalidate=345600, stale-if-error=345600",
+  "Cache-Control": "public, max-age=600, s-maxage=172800",
 };
 
 export default defineNuxtConfig({
