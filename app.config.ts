@@ -1,10 +1,10 @@
 export default defineAppConfig({
   alpine: {
-    title: "Alpine",
-    description: "The minimalist blog theme",
+    title: "Torbjørn Holtmon",
+    description: "Torbjørn Holtmon´s personal developer blog",
     image: {
-      src: "/social-card-preview.png",
-      alt: "An image showcasing my project.",
+      src: "/me.webp",
+      alt: "Torbjørn Holtmon, software developer",
       width: 400,
       height: 300,
     },
@@ -26,13 +26,16 @@ export default defineAppConfig({
       message: "Follow me on", // string that will be displayed in the footer (leave empty or delete to disable)
     },
     socials: {
-      twitter: "nuxtlabs",
-      instagram: "atinuxt",
+      twitter: "",
+      instagram: "",
+
       linkedin: {
         icon: "uil:linkedin",
         label: "LinkedIn",
         href: "https://www.linkedin.com/company/nuxtlabs",
       },
+
+      github: "TorbjornHoltmon",
     },
     form: {
       successMessage: "Message sent. Thank you!",
