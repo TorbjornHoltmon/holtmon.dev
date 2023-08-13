@@ -50,7 +50,6 @@ export default defineNuxtConfig({
             "/apple-icon-76x76.png",
             "/apple-icon-precomposed.png",
             "/apple-icon.png",
-            "/articles",
             "/bear.svg",
             "/browserconfig.xml",
             "/design-tokens-studio.png",
