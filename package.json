@@ -14,10 +14,10 @@
   },
   "devDependencies": {
     "@nuxt-themes/alpine": "^1.6.2",
-    "@nuxt/devtools": "^0.7.5",
+    "@nuxt/devtools": "^0.8.0",
     "@nuxt/eslint-config": "^0.1.1",
-    "@types/node": "^20.4.9",
-    "eslint": "^8.46.0",
+    "@types/node": "^20.5.0",
+    "eslint": "^8.47.0",
     "nuxt": "npm:nuxt3@latest",
     "nitropack": "npm:nitropack-edge@latest",
     "h3": "1.8.0-rc.3"
