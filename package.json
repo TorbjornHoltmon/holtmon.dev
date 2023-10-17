@@ -10,7 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@nuxthq/studio": "^1.0.0"
+    "@nuxthq/studio": "^1.0.2"
   },
   "devDependencies": {
     "@nuxt-themes/alpine": "^1.6.4",
